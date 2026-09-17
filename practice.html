@@ -1,0 +1,215 @@
+CSE Student 💻 | Aspiring Software Engineer 🚀 | Learning • Building • Growing 🌱<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile Cards</title>
+
+    <style>
+
+        /* Basic Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 30px;
+        }
+
+
+        /* CSS Grid - Multiple Cards */
+        .card-container {
+            display: grid;
+
+            /* 3 cards in a row */
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 20px;
+
+            max-width: 1000px;
+            margin: auto;
+        }
+
+
+        /* Profile Card */
+        .profile-card {
+            background-color: white;
+
+            /* Box Model */
+            padding: 25px;
+            margin: 10px;
+
+            border: 1px solid #ddd;
+            border-radius: 15px;
+
+            position: relative;
+
+            text-align: center;
+        }
+
+
+        /* Profile Image */
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+
+            border-radius: 50%;
+
+            margin-bottom: 15px;
+        }
+
+
+        /* Flexbox */
+        .profile-info {
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            gap: 10px;
+        }
+
+
+        .profile-info h2 {
+            font-size: 22px;
+        }
+
+
+        .profile-info p {
+            color: #666;
+        }
+
+
+        /* Absolute Position Badge */
+        .badge {
+            position: absolute;
+
+            top: 10px;
+            right: 10px;
+
+            background-color: green;
+            color: white;
+
+            padding: 5px 10px;
+
+            border-radius: 10px;
+
+            font-size: 12px;
+        }
+
+
+        /* Button */
+        .profile-info button {
+            padding: 8px 18px;
+
+            border: none;
+            border-radius: 8px;
+
+            background-color: #007bff;
+            color: white;
+
+            cursor: pointer;
+        }
+
+
+        /* Media Query */
+        /* Smaller screens */
+        @media (max-width: 768px) {
+
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-card {
+                margin: 5px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="card-container">
+
+
+        <!-- Card 1 -->
+        <div class="profile-card">
+
+            <span class="badge">ONLINE</span>
+
+            <img src="https://i.pravatar.cc/150?img=1" alt="Profile">
+
+            <div class="profile-info">
+
+                <h2>John Doe</h2>
+
+                <p>Web Developer</p>
+
+                <p>HTML, CSS & JavaScript</p>
+
+                <button>View Profile</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="profile-card">
+
+            <span class="badge">NEW</span>
+
+            <img src="https://i.pravatar.cc/150?img=2" alt="Profile">
+
+            <div class="profile-info">
+
+                <h2>Sarah Smith</h2>
+
+                <p>UI/UX Designer</p>
+
+                <p>Design & Prototyping</p>
+
+                <button>View Profile</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="profile-card">
+
+            <span class="badge">ONLINE</span>
+
+            <img src="https://i.pravatar.cc/150?img=3" alt="Profile">
+
+            <div class="profile-info">
+
+                <h2>Mike Johnson</h2>
+
+                <p>Software Engineer</p>
+
+                <p>C++, Java & Python</p>
+
+                <button>View Profile</button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
