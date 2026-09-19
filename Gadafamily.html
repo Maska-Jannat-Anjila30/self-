@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile Cards</title>
+
+    <style>
+
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 30px;
+        }
+
+
+        
+        .card-container {
+            display: grid;
+
+            
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 20px;
+
+            max-width: 1000px;
+            margin: auto;
+        }
+
+
+    
+        .profile-card {
+            background-color: lightblue;
+
+            
+            padding: 25px;
+            margin: 10px;
+
+            border: 1px solid #ddd;
+            border-radius: 15px;
+
+            position: relative;
+
+            text-align: center;
+        }
+
+
+        
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+
+            border-radius: 50%;
+
+            margin-bottom: 15px;
+        }
+
+
+    
+        .profile-info {
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            gap: 10px;
+        }
+
+
+        .profile-info h2 {
+            font-size: 22px;
+        }
+
+
+        .profile-info p {
+            color: #666;
+        }
+
+
+    
+        .badge {
+            position: absolute;
+
+            top: 10px;
+            right: 10px;
+
+            background-color: green;
+            color: white;
+
+            padding: 5px 10px;
+
+            border-radius: 10px;
+
+            font-size: 12px;
+        }
+
+
+        
+        .profile-info button {
+            padding: 8px 18px;
+
+            border: none;
+            border-radius: 8px;
+
+            background-color: #007bff;
+            color: white;
+
+            cursor: pointer;
+        }
+
+
+        
+    
+        @media (max-width: 768px) {
+
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-card {
+                margin: 5px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="card-container">
+
+
+        
+        <div class="profile-card">
+
+            <span class="badge">ONLINE</span>
+
+            <img src="https://wallpapers.com/images/hd/jethalal-in-taarak-mehta-ka-ooltah-chashmah-qi4ao3x0qts68ozq.jpg">
+
+            <div class="profile-info">
+
+                <h2>Jethalal Gada</h2>
+
+                <p>Problem maker</p>
+
+                <p>Owner of Gada Electronics</p>
+
+                <button>View Profile</button>
+
+            </div>
+
+        </div>
+
+
+        
+        <div class="profile-card">
+
+            <span class="badge">NEW</span>
+
+            <img src="https://tse1.explicit.bing.net/th/id/OIP.LYmBYn8qKbJKfVjMhQ31KAHaFZ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+
+            <div class="profile-info">
+
+                <h2>Daya Tappu ke papa gada</h2>
+
+                <p>Housewife</p>
+
+                <p>Garba Queen</p>
+
+                <button>View Profile</button>
+
+            </div>
+
+        </div>
+
+
+        
+        <div class="profile-card">
+
+            <span class="badge">ONLINE</span>
+
+            <img src="https://feeds.abplive.com/onecms/images/uploaded-images/2022/11/18/412f006cc2eec569b8814d71ae6221f91668773692235410_original.jpg">
+
+            <div class="profile-info">
+
+                <h2>Champaklal Gada</h2>
+
+                <p>Young old group member</p>
+
+                <p>Short temper</p>
+
+                <button>View Profile</button>
+
+            </div>
+
+        </div>
+
+        <div class="profile-card">
+
+            <span class="badge">ONLINE</span>
+
+            <img src="https://i.pinimg.com/736x/ae/2e/5d/ae2e5dfebde18a3efd1c84bd379714c5.jpg">
+
+            <div class="profile-info">
+
+                <h2>Babita Iyer</h2>
+
+                <p>Jethalal's Fav person</p>
+
+                <p>Educated,Smart,Beutiful</p>
+
+                <button>View Profile</button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
